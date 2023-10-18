@@ -1,0 +1,49 @@
+.section {
+    background-color: white;
+    margin: 10px 0px;
+}
+
+.section__header {
+    display: flex;
+    border-bottom: 2px solid #eaebeb;
+    padding: 10px;
+}
+
+@media (max-width: 767px) { 
+    .section__header {
+        flex-direction: column;
+    }
+}
+
+.section__title {
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.section__button {
+    color: teal;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    transition: 0.25s;
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.section__button:active {
+    color: hsl(180, 100%, 55%);
+}
+
+.section__button:disabled {
+    color: grey;
+}
+
+.section__button--hidden.section__button--hidden {
+    display: none;
+}
+
+.section__content {
+    padding: 20px;
+}

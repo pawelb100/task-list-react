@@ -1,0 +1,23 @@
+.Button {
+    color: teal;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    transition: 0.25s;
+}
+
+.Button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.Button:active {
+    color: hsl(180, 100%, 55%);
+}
+
+.Button:disabled {
+    color: grey;
+}
+
+.Button--hidden {
+    display: none;
+}
