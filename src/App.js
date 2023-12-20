@@ -5,15 +5,24 @@ import Section from './Section';
 import Buttons from './Buttons';
 import Tasks from './Tasks';
 import Container from './Container';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 const App = () => {
 
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "Zrobić naleśniki", done: true },
-    { id: 2, content: "Obejrzeć serial", done: false },
-  ]);
+  const tasksFromStorage = localStorage.getItem("tasks"); 
+
+  const [tasks, setTasks] = useState(
+    tasksFromStorage ? JSON.parse(tasksFromStorage) : []
+  );
+
+  if (tasks === null) {
+    setTasks([]);
+  }
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const [hideDone, setHideDone] = useState(false);
 
