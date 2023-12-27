@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 
 const App = () => {
 
-  const tasksFromStorage = localStorage.getItem("tasks"); 
+  const tasksFromStorage = localStorage.getItem("tasks");
 
   const [tasks, setTasks] = useState(
     tasksFromStorage ? JSON.parse(tasksFromStorage) : []
@@ -61,7 +61,11 @@ const App = () => {
     <>
       <Header title="Lista zadań" />
       <Container>
-        <Section title="Dodaj nowe zadanie" body={<Form addNewTask={addNewTask} />} />
+        <Section
+          title="Dodaj nowe zadanie"
+          body={
+            <Form addNewTask={addNewTask}
+            />} />
         <Section
           title="Lista zadań"
           body={

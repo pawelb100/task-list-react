@@ -1,4 +1,4 @@
-import './style.css';
+import { ButtonStyled } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone}) => {
 
@@ -7,17 +7,15 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone}) => {
 
     return (
         <>
-            <button
-                className="Button"
+            <ButtonStyled
                 onClick={toggleHideDone}>
                 {`${hideDone ? "Pokaż" : "Ukryj"} ukończone`}
-            </button>
-            <button
-                className="Button"
+            </ButtonStyled>
+            <ButtonStyled
                 onClick={setAllDone}
                 disabled={tasks.every(task => task.done) ? true : false}>
                 Ukończ wszystkie
-            </button>
+            </ButtonStyled>
         </>
     );
 };
