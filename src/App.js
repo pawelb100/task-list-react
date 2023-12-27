@@ -16,10 +16,6 @@ const App = () => {
     tasksFromStorage ? JSON.parse(tasksFromStorage) : []
   );
 
-  if (tasks === null) {
-    setTasks([]);
-  }
-
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
