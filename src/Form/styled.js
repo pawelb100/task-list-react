@@ -5,9 +5,9 @@ export const TaskContent = styled.input`
     font-size: 18px;
     margin-right: 25px;
     padding: 15px;
-    border: 2px solid #eaebeb;
+    border: 2px solid ${({ theme }) => theme.color.blackHaze};
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin-bottom: 15px;
         margin-right: 0px;
     }
@@ -18,7 +18,7 @@ export const FormStyled = styled.form`
     flex-direction: row;
     justify-content: space-between;
 
-    @media (max-width: 757px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-direction: column;
     }
 `;
@@ -26,8 +26,8 @@ export const FormStyled = styled.form`
 export const AddTaskButton = styled.button`
     font-size: 18px;
     padding: 15px;
-    background-color: teal;
-    color: white;
+    background-color: ${({ theme }) => theme.color.teal};
+    color: ${({ theme }) => theme.color.white};
     transition: 1.5s;
 
     &:hover {

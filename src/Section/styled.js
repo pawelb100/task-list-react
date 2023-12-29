@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 export const SectionStyled = styled.section`
-    background-color: white;
+    background-color: ${({ theme }) => theme.color.white };
     margin: 10px 0px; 
 `;
 
 export const SectionHeader = styled.div`
     display: flex;
-    border-bottom: 2px solid #eaebeb;
+    border-bottom: 2px solid ${({ theme }) => theme.color.blackHaze };
     padding: 10px;
 
-    @media (max-width: 767px) { 
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax }) { 
         flex-direction: column;
     }  
 `;

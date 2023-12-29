@@ -1,21 +1,21 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
     color: teal;
-    background-color: white;
+    background-color: ${({ theme }) => theme.color.white};
     border: none;
     margin: 10px;
     transition: 0.25s;
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(120%);
     }
 
     &:active {
-        color: hsl(180, 100%, 55%);
+        filter: brightness(150%);
     }
 
     &:disabled {
-        color: grey;
+        color: ${({ theme }) => theme.color.gray};
     }
 `;

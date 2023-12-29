@@ -8,7 +8,7 @@ export const TasksStyled = styled.ul`
 export const TaskItem = styled.li`
     display: flex;
     align-items: center;    
-    border-bottom: 2px solid #eaebeb;
+    border-bottom: 2px solid ${({ theme }) => theme.color.blackHaze };
     padding: 10px;
 
     ${({ hide }) => hide && css`
@@ -30,25 +30,25 @@ export const TaskButton = styled.button`
     min-height: 35px;
     border: none;
     font-size: 20px;
-    color: white;
+    color: ${({ theme }) => theme.color.white };
     transition: 1s;
 
     ${({ done }) => done && css`
         margin-right: 10px;
-        background-color: #197b1e;
+        background-color: ${({ theme }) => theme.color.forestGreen };
 
         &:hover {
-            background-color: hsl(123, 66%, 39%);
+            filter: brightness(130%);
         }
 
     `}
 
     ${({ remove }) => remove && css`
         margin-left: 10px;
-        background-color: #ec273e;
+        background-color: ${({ theme }) => theme.color.alizarinCrimson };
 
         &:hover {
-            background-color: hsl(353, 84%, 64%);
+            filter: brightness(130%);
         }
     `}
 
