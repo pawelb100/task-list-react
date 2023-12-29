@@ -1,20 +1,13 @@
-import './App.css';
 import Header from './Header';
 import Form from './Form';
 import Section from './Section';
 import Buttons from './Buttons';
 import Tasks from './Tasks';
 import Container from './Container';
-import { useState } from 'react';
 import { useTasks } from './useTasks';
+import { useHideDone } from './useHideDone';
 
 const App = () => {
-
-  const [hideDone, setHideDone] = useState(false);
-
-  const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
-  };
 
   const {
     tasks,
@@ -23,6 +16,11 @@ const App = () => {
     setAllDone,
     addNewTask
   } = useTasks();
+
+  const {
+    hideDone,
+    toggleHideDone
+  } = useHideDone();
 
   return (
     <>
