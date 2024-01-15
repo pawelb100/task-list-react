@@ -1,37 +1,39 @@
-# Task List
+# Task List React
 
-Description
+A simple task list web application built with React.js, allowing users to add, browse, remove, mark as done, and filter tasks. The project is designed to be responsive for various devices, utilizing Styled Components, Custom Hooks, and a custom theme. Tasks are persistently stored in the local storage for a seamless user experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+- **Add Task:** Easily add new tasks to your list.
+- **Browse Tasks:** View the list of tasks with their details.
+- **Remove Task:** Remove unwanted tasks with a single click.
+- **Mark as Done:** Check off completed tasks to keep track of your progress.
+- **Filter Tasks:** Toggle between all tasks and only those that are yet to be completed.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **React.js:** The project is built using the popular JavaScript library for building user interfaces.
+- **Styled Components:** Styling is done using Styled Components, allowing for a modular and maintainable design.
+- **Custom Hooks:** Custom hooks enhance code reusability and simplify complex logic.
+- **Theme:** The application features a custom theme for a cohesive and visually pleasing user interface.
+- **Local Storage:** Task data is stored locally, ensuring persistence even after page refresh.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Responsive Design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The task list is responsive, providing a seamless experience across a range of devices, from desktops to mobile devices.
 
-### `npm run build`
+## Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Task List Screenshot](/screenshot.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the application using `npm start`.
 
-### `npm run eject`
+## GitHub Pages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Task list is available at GitHub Pages. [Open demo](https://pawelb100.github.io/task-list-react/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
