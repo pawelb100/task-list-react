@@ -32,8 +32,8 @@ The task list is responsive, providing a seamless experience across a range of d
 2. Install dependencies using `npm install`.
 3. Run the application using `npm start`.
 
-## GitHub Pages
+## Deployment
 
-Task list is available at GitHub Pages. [Open demo](https://pawelb100.github.io/task-list-react/).
+Task list is available at Vercel App. [Open demo](https://pawelb100-task-list-react.vercel.app/).
 
 
