@@ -12,9 +12,11 @@ A simple task list web application built with React.js, allowing users to add, b
 
 ## Technologies Used
 
+- **JavaScript:** The project is developed using JavaScript, the programming language that powers dynamic and interactive web applications.
 - **React.js:** The project is built using the popular JavaScript library for building user interfaces.
 - **Styled Components:** Styling is done using Styled Components, allowing for a modular and maintainable design.
-- **Custom Hooks:** Custom hooks enhance code reusability and simplify complex logic.
+- **Redux:** State management is implemented with Redux, providing a centralized store for managing the application's state.
+- **Redux Saga:** Asynchronous operations, such as handling side effects, are managed using Redux Saga, enhancing the predictability of the application's logic.
 - **Theme:** The application features a custom theme for a cohesive and visually pleasing user interface.
 - **Local Storage:** Task data is stored locally, ensuring persistence even after page refresh.
 
