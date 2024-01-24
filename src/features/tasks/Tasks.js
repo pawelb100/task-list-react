@@ -1,9 +1,10 @@
 import Header from '../../common/Header';
 import Form from './Form';
 import Section from '../../common/Section';
-import Buttons from './Buttons';
 import TaskList from './TaskList';
 import Container from '../../common/Container';
+import FetchTasksButton from './FetchTasksButton';
+import TaskOptionButtons from './TaskOptionButtons';
 
 const Tasks = () => (
   <>
@@ -11,11 +12,12 @@ const Tasks = () => (
     <Container>
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form />} />
+        body={<Form />}
+        extraHeaderContent={<FetchTasksButton />} />
       <Section
         title="Lista zadań"
         body={<TaskList />}
-        extraHeaderContent={<Buttons />} />
+        extraHeaderContent={<TaskOptionButtons />} />
     </Container>
   </>
 );
