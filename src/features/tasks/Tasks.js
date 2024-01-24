@@ -4,7 +4,7 @@ import Section from '../../common/Section';
 import TaskList from './TaskList';
 import Container from '../../common/Container';
 import FetchTasksButton from './FetchTasksButton';
-import TaskOptionButtons from './TaskOptionButtons';
+import TaskListOptionsButtons from './TaskListOptionsButtons';
 
 const Tasks = () => (
   <>
@@ -17,7 +17,7 @@ const Tasks = () => (
       <Section
         title="Lista zadań"
         body={<TaskList />}
-        extraHeaderContent={<TaskOptionButtons />} />
+        extraHeaderContent={<TaskListOptionsButtons />} />
     </Container>
   </>
 );

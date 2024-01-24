@@ -2,7 +2,7 @@ import Button from "../../../common/Button";
 import { useSelector, useDispatch } from "react-redux";
 import { selectTasks, selectHideDone, toggleHideDone, setAllDone } from "../tasksSlice";
 
-const TaskOptionButtons = () => {
+const TaskListOptionsButtons = () => {
 
     const tasks = useSelector(selectTasks);
     const hideDone = useSelector(selectHideDone);
@@ -26,4 +26,4 @@ const TaskOptionButtons = () => {
     );
 };
 
-export default TaskOptionButtons;
+export default TaskListOptionsButtons;
